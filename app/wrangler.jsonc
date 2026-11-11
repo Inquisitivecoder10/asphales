@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "asphales",
+  "main": "./standalone-worker.ts",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  // Wrangler provisions these in your account and reuses the bindings later.
+  "d1_databases": [{ "binding": "DB" }],
+  "r2_buckets": [{ "binding": "BUCKET" }]
+}
